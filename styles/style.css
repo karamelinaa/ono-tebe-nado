@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
-  padding: 92px 50px;
+  padding: 92px 50px 96px;
 }
 
 .header__menu {
@@ -38,29 +38,27 @@
   width: 100%; 
 }
 
-.header address {
+.address {
   display: flex;
   flex-direction: column;
-  justify-self: end;
-}
-
-.address_text {
+  width: 240px;
+  line-height: 24.3px;
   font-size: 18px;
   font-style: normal;
-  line-height: 24.3px;
+}
+
+.header address {
+  justify-self: end;
 }
 
 .address_link {
   display: block;
-  font-size: 18px;
-  font-style: normal;
-  line-height: 24.3px;
   text-underline-position: under; 
 }
 
 .cover {
   position: relative;
-  padding: 165px 50px 50px;
+  padding: 165px 50px 49px;
   background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -88,6 +86,7 @@
   font-size: 100px;
   letter-spacing: 30px;
   text-transform: uppercase;
+  line-height: 115px; 
 }
 
 .aligned-text {
@@ -95,7 +94,6 @@
 }
 
 .letter-spacing-extended {
-  flex-wrap: nowrap;
   letter-spacing: 60px;
 }
 
@@ -125,10 +123,9 @@
 
 .cover__description-text {
   z-index: 1;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   padding-top: 147px;
   color: #FFF;
-  line-height: 28px;
   line-height: 28px;
   text-align: center;
   text-transform: uppercase;
@@ -141,7 +138,7 @@
   border: 1px solid #FFF; 
   padding: 12px 32px;
   color: #FFF;
-  font-family: Raleway;
+  font-family: Raleway, sans-serif; 
   font-size: 22px;
   text-transform: uppercase; 
   background-color: transparent;
@@ -172,7 +169,7 @@
 .lots__card-list-item {
   flex-grow: 1;
   width: 430px;
-  height: 450px;
+  min-height: 450px;
 }
 
 .card-link {
@@ -239,8 +236,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 25px;
-  padding: 182px 50px;
-
+  padding: 182px 50px 180px;
 }
 
 .about__column {
@@ -280,18 +276,14 @@
   color: #000;
   font-size: 20px;
   line-height: normal;
-}
-
-.about__text-spasing {
-  padding-top: 25px;
+  gap: 25px;
 }
 
 .footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  padding: 0 50px;
+  padding: 0 50px 90px;
 }
-
 
 .footer__menu {
   display: flex;
@@ -303,10 +295,6 @@
 
 .footer__menu-list {
   list-style: none;
-}
-
-
-.footer__menu-link_active {
   text-underline-position: under;
 }
 
@@ -315,7 +303,7 @@
   flex-wrap: nowrap;
   justify-content: end;
   align-items: flex-start;
-  gap: 50px;
+  gap: 48px;
   list-style: none; 
 }
 
